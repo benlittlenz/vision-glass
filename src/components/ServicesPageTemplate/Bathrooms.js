@@ -73,7 +73,7 @@ const ServicesTemplate = ({
         </div>
     </section>
     <section>
-        <div>
+        <div style={{width: '100%'}}>
         <Gallery images={IMAGES}/>
         </div>
         

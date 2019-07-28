@@ -1,18 +1,55 @@
 import React from 'react'
 import config from '../../../config'
+import './footer.css'
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className='container'>
-        <div className='content has-text-centered'>
-          <p>
-            {config.copyright}
-          </p>
-          <p>Powered by <a href='https://www.gatsbyjs.org'>Gatsby</a> and <a href='https://www.netlifycms.org'>Netlify CMS</a> | <a href='https://github.com/v4iv/gatsby-starter-business'>Github Repository</a></p>
+    <>
+      <div class="footer">
+        <div class="contain">
+            <div class="col">
+            <h1>Products</h1>
+            <ul>
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div> 
+          <div class="col">
+            <h1>Accounts</h1>
+            <ul>
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Resources</h1>
+            <ul>
+              <li>Webmail</li>
+              <li>Redeem code</li>
+              <li>WHOIS lookup</li>
+              <li>Site map</li>
+              <li>Web templates</li>
+              <li>Email templates</li>
+            </ul>
+          </div>
+        <div class="col">
+          <h1>Support</h1>
+          <ul>
+            <li>Contact us</li>
+            <li>Web chat</li>
+            <li>Open ticket</li>
+          </ul>
         </div>
+        <div class="clearfix"></div>
       </div>
-    </footer>
+      </div>
+    </>
   )
 }
 
