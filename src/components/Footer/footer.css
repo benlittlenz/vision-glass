@@ -18,8 +18,8 @@ body {
 }
 
 .footer .col {
-    width: 190px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 500px;
     float: left;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -46,7 +46,17 @@ body {
     padding: 0;
 }
 
-.footer .col p {}
+.footer .col p {
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center !important;
+}
+
+.footer .contain {
+    width: 100%;
+    margin: 0 auto;
+}
 
 .footer .col ul li {
     color: #999999;

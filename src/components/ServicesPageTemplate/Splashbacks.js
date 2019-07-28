@@ -4,15 +4,15 @@ import Gallery from 'react-grid-gallery';
  
 const IMAGES =
 [{
-        src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
+        src: "/img/Kitchen-splashback.jpeg",
+        thumbnail: "/img/Kitchen-splashback.jpeg",
         thumbnailWidth: 320,
         thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
 },
 {
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+        src: "/img/kitchen-splashback.jpeg",
+        thumbnail: "/img/kitchen-splashback.jpeg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
         tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
@@ -20,8 +20,8 @@ const IMAGES =
 },
  
 {
-        src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-        thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+        src: "/img/white-splashback.jpg",
+        thumbnail: "/img/white-splashback.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
 },
@@ -49,36 +49,52 @@ const ServicesTemplate = ({
   description,
   offerings,
   meta_title,
-  meta_description
-}) => (
-  <div>
-    <Helmet>
-      <title>{meta_title}</title>
-      <meta name='description' content={meta_description} />
-    </Helmet>
-    <section className='hero is-primary is-bold'>
-        <div className='hero-body'>
-        <div className='container'>
+  meta_description,
+  contentComponent,
+  content,
+  testimonials,
+}) => {
+  const PageContent = contentComponent || Content
+  return (
+    <div>
+      <Helmet>
+        <title>{meta_title}</title>
+        <meta name='description' content={meta_description} />
+      </Helmet>
+      <section className='hero is-primary is-bold'>
+          <div className='hero-body'>
+          <div className='container'>
+              <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                  <div className='section'>
+                  <h1 className='title'>
+                      Balustrades
+                  </h1>
+                  </div>
+              </div>
+              </div>
+          </div>
+          </div>
+      </section>
+      <section className='section section--gradient'>
+          <div className='container'>
             <div className='columns'>
-            <div className='column is-10 is-offset-1'>
+              <div className='column is-10 is-offset-1'>
                 <div className='section'>
-                <h1 className='title'>
-                    Kitchen Splashbacks
-                </h1>
+                  <PageContent className='content' content={content} />
                 </div>
+              </div>
             </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section>
-        <div>
-        <Gallery images={IMAGES}/>
-        </div>
-        
-    </section>
-  </div>
-)
-
+          </div>
+        </section>
+      <section>
+          <div style={{width: '90%', margin: '0 auto'}}>
+              <Gallery images={IMAGES}/>
+          </div>
+          
+      </section>
+    </div>
+  )
+}
 
 export default ServicesTemplate

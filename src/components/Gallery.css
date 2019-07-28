@@ -1,4 +1,6 @@
 .image-gallery-slide img {
-    max-height: 700px !important;
-    width: 100%;
+    display: block;
+    max-height: 500px !important;
+    width: 80%;
+    margin: 20px auto 0 auto;
 }

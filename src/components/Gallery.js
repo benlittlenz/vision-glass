@@ -8,17 +8,17 @@ class Gallery extends React.Component {
  
     const images = [
       {
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+        original: '/img/Splashback.jpg',
+        thumbnail: '/img/Splashback.jpg'
+      },
+      {
+        original: '/img/Stair-Balustrade.jpg',
+        thumbnail: '/img/Stair-Balustrade.jpg',
         description: 'Render custom slides within the gallery',
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
-      },
-      {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+        original: '/img/outdoor-balustrade.jpg',
+        thumbnail: '/img/outdoor-balustrade.jpg'
       }
     ]
  
@@ -27,7 +27,7 @@ class Gallery extends React.Component {
         items={images} 
         showFullscreenButton={false} 
         showPlayButton={false}
-        style={{maxHeight: '600px'}}
+        
     />
     );
   }

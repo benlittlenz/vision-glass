@@ -34,26 +34,30 @@ const NavBar = ({toggleNavbar, isActive}) => (
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
 
           <div className='navbar-start'>
-            <Link className='navbar-item' to='/services/bathrooms'>
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/services/bathrooms'>
                             Bathrooms
             </Link>
-            <Link className='navbar-item' to='/services/balustrades'>
+            <Link className='navbar-item' style={{color: '#413F44'}}to='/services/balustrades'>
                             Balustrades
             </Link>
-            <Link className='navbar-item' to='/services/splashbacks'>
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/services/splashbacks'>
                             Splashbacks
             </Link>
-            <Link className='navbar-item' to='/blog'>
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/blog'>
                             Glazing
             </Link>
-            <Link className='navbar-item' to='/about'>
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/blog'>
+                            Cat Doors
+            </Link>
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/about'>
                             About
             </Link>
             <div className='navbar-item'>
               <div className='field is-grouped'>
                 <p className='control'>
                   <Link
-                    className='button is-primary is-outlined'
+                    style={{background: '#8C43FF', color: '#fff', fontWeight:'400'}}
+                    className='button'
                     to='/contact'>
                             Contact Us
                   </Link>
