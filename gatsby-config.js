@@ -49,8 +49,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
@@ -99,8 +98,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'standalone',
-        icons: [
-          {
+        icons: [{
             src: `/icons/icon-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
@@ -117,7 +115,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-feed',
       options: {
-        setup (ref) {
+        setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata
           ret.allMarkdownRemark = ref.query.allMarkdownRemark
           ret.generator = config.siteTitle
@@ -140,26 +138,27 @@ module.exports = {
                   }
                 }
               `,
-        feeds: [
-          {
-            serialize (ctx) {
-              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
-              return ctx.query.allMarkdownRemark.edges
-                .filter(
-                  edge => edge.node.frontmatter.templateKey === 'article-page'
-                )
-                .map(edge => ({
-                  categories: edge.node.frontmatter.tags,
-                  date: edge.node.frontmatter.date,
-                  title: edge.node.frontmatter.title,
-                  description: edge.node.excerpt,
-                  author: rssMetadata.author,
-                  url: rssMetadata.site_url + edge.node.fields.slug,
-                  guid: rssMetadata.site_url + edge.node.fields.slug,
-                  custom_elements: [{'content:encoded': edge.node.html}],
-                }))
-            },
-            query: `
+        feeds: [{
+          serialize(ctx) {
+            const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
+            return ctx.query.allMarkdownRemark.edges
+              .filter(
+                edge => edge.node.frontmatter.templateKey === 'article-page'
+              )
+              .map(edge => ({
+                categories: edge.node.frontmatter.tags,
+                date: edge.node.frontmatter.date,
+                title: edge.node.frontmatter.title,
+                description: edge.node.excerpt,
+                author: rssMetadata.author,
+                url: rssMetadata.site_url + edge.node.fields.slug,
+                guid: rssMetadata.site_url + edge.node.fields.slug,
+                custom_elements: [{
+                  'content:encoded': edge.node.html
+                }],
+              }))
+          },
+          query: `
                     {
                       allMarkdownRemark(
                         limit: 1000,
@@ -183,9 +182,8 @@ module.exports = {
                       }
                     }
                   `,
-            output: config.siteRss,
-          },
-        ],
+          output: config.siteRss,
+        }, ],
       },
     },
     {

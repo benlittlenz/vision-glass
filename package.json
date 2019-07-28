@@ -16,6 +16,7 @@
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
     "bulma": "^0.7.2",
+    "eslint-config-airbnb": "^17.1.1",
     "gatsby": "^2.0.98",
     "gatsby-paginate": "^1.0.17",
     "gatsby-plugin-feed": "^2.0.11",
@@ -54,11 +55,13 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
     "eslint-config-standard-trailing-commas": "^6.1.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
