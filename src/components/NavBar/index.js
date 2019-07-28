@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link, graphql, StaticQuery} from 'gatsby'
-import SearchBox from '../SearchBox'
 
 const NavBar = ({toggleNavbar, isActive}) => (
   <StaticQuery
@@ -15,7 +14,12 @@ const NavBar = ({toggleNavbar, isActive}) => (
       <nav className='navbar is-fixed-top' aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-            <strong>Gatsby Starter Business</strong>
+            <img 
+              src={`/icons/vision-logo.jpg`} 
+              width="112" 
+              height="60"
+              style={{marginLeft: '20px', marginRight: '60px', maxHeight: '5.25rem'}}
+            />
           </Link>
           <button
             className={`button navbar-burger ${isActive ? 'is-active' : ''}`}
@@ -29,18 +33,18 @@ const NavBar = ({toggleNavbar, isActive}) => (
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`} id='navMenu'>
 
-          <div className='navbar-end'>
+          <div className='navbar-start'>
             <Link className='navbar-item' to='/pricing'>
-                            Bathroom
+                            Bathrooms
             </Link>
             <Link className='navbar-item' to='/blog'>
-                            Balustrade
+                            Balustrades
             </Link>
             <Link className='navbar-item' to='/blog'>
-                            Windows
+                            Splashbacks
             </Link>
             <Link className='navbar-item' to='/blog'>
-                            Blog
+                            Glazing
             </Link>
             <Link className='navbar-item' to='/about'>
                             About

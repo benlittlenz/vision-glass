@@ -58,7 +58,7 @@ const SE0 = ({ title, meta_title, meta_desc, cover, slug, date }) => {
       name: config.siteTitle,
       logo: {
         '@type': 'ImageObject',
-        url: config.siteUrl + '/icons/icon-512x512.png',
+        url: config.siteUrl + '/icons/vision-logo.jpg',
       },
     },
     description: meta_desc,
