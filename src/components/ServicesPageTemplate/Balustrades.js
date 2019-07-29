@@ -55,20 +55,16 @@ const BalustradeTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-primary is-bold'>
-          <div className='hero-body'>
-          <div className='container'>
-              <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                  <div className='section'>
-                  <h1 className='title'>
-                      Balustrades
-                  </h1>
-                  </div>
-              </div>
-              </div>
-          </div>
-          </div>
+      <section className='hero'>
+        <div>
+          <img
+            style={{
+                maxHeight: '400px',
+                width: '100%',
+                opacity: '0.5'
+            }} 
+            src='/img/headers/balustrade-header.png'/>
+        </div>
       </section>
       <section className='section section--gradient'>
           <div className='container'>
@@ -82,6 +78,7 @@ const BalustradeTemplate = ({
           </div>
         </section>
       <section>
+        <h1 className="title has-text-centered">Recent Work</h1>
           <div style={{width: '90%', margin: '0 auto'}}>
               <Gallery images={IMAGES}/>
           </div>

@@ -8,20 +8,20 @@ class Gallery extends React.Component {
  
     const images = [
       {
-        original: '/img/Splashback.jpg',
-        thumbnail: '/img/Splashback.jpg'
+        original: '/img/splashbacks/green-splashback.jpg',
+        thumbnail: '/img/splashbacks/green-splashback.jpg'
       },
       {
-        original: '/img/outdoor-balustrade.jpg',
-        thumbnail: '/img/outdoor-balustrade.jpg'
+        original: '/img/balustrades/outdoor-balustrade.jpg',
+        thumbnail: '/img/balustrades/outdoor-balustrade.jpg'
       },
       {
-        original: '/img/white-splashback.jpg',
-        thumbnail: '/img/white-splashback.jpg'
+        original: '/img/splashbacks/white-splashback.jpg',
+        thumbnail: '/img/splashbacks/white-splashback.jpg'
       },
       {
-        original: '/img/Stair-Balustrade.jpg',
-        thumbnail: '/img/Stair-Balustrade.jpg',
+        original: '/img/balustrades/Stair-Balustrade.jpg',
+        thumbnail: '/img/balustrades/Stair-Balustrade.jpg',
         description: 'Render custom slides within the gallery',
       }
     ]

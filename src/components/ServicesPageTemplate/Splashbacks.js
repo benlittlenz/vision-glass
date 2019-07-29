@@ -4,15 +4,15 @@ import Gallery from 'react-grid-gallery';
  
 const IMAGES =
 [{
-        src: "/img/Kitchen-splashback.jpeg",
-        thumbnail: "/img/Kitchen-splashback.jpeg",
+        src: "/img/splashbacks/Kitchen-splashback.jpeg",
+        thumbnail: "/img/splashbacks/Kitchen-splashback.jpeg",
         thumbnailWidth: 320,
         thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
 },
 {
-        src: "/img/kitchen-splashback.jpeg",
-        thumbnail: "/img/kitchen-splashback.jpeg",
+        src: "/img/splashbacks/kitchen-splashback.jpeg",
+        thumbnail: "/img/splashbacks/kitchen-splashback.jpeg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
         tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
@@ -20,8 +20,8 @@ const IMAGES =
 },
  
 {
-        src: "/img/white-splashback.jpg",
-        thumbnail: "/img/white-splashback.jpg",
+        src: "/img/splashbacks/white-splashback.jpg",
+        thumbnail: "/img/splashbacks/white-splashback.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
 },
@@ -61,20 +61,16 @@ const ServicesTemplate = ({
         <title>{meta_title}</title>
         <meta name='description' content={meta_description} />
       </Helmet>
-      <section className='hero is-primary is-bold'>
-          <div className='hero-body'>
-          <div className='container'>
-              <div className='columns'>
-              <div className='column is-10 is-offset-1'>
-                  <div className='section'>
-                  <h1 className='title'>
-                      Balustrades
-                  </h1>
-                  </div>
-              </div>
-              </div>
-          </div>
-          </div>
+      <section className='hero'>
+        <div>
+          <img 
+            style={{
+              maxHeight: '400px',
+              width: '100%',
+              opacity: '0.5'
+            }}
+            src='/img/headers/splashback-header.png'/>
+        </div>
       </section>
       <section className='section section--gradient'>
           <div className='container'>
@@ -88,6 +84,7 @@ const ServicesTemplate = ({
           </div>
         </section>
       <section>
+          <h1 className="title has-text-centered">Recent Work</h1>
           <div style={{width: '90%', margin: '0 auto'}}>
               <Gallery images={IMAGES}/>
           </div>
