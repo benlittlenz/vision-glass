@@ -12,13 +12,17 @@ class Gallery extends React.Component {
         thumbnail: '/img/Splashback.jpg'
       },
       {
+        original: '/img/outdoor-balustrade.jpg',
+        thumbnail: '/img/outdoor-balustrade.jpg'
+      },
+      {
+        original: '/img/white-splashback.jpg',
+        thumbnail: '/img/white-splashback.jpg'
+      },
+      {
         original: '/img/Stair-Balustrade.jpg',
         thumbnail: '/img/Stair-Balustrade.jpg',
         description: 'Render custom slides within the gallery',
-      },
-      {
-        original: '/img/outdoor-balustrade.jpg',
-        thumbnail: '/img/outdoor-balustrade.jpg'
       }
     ]
  

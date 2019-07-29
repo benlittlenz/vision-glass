@@ -3,16 +3,10 @@ import Helmet from 'react-helmet'
 import Gallery from 'react-grid-gallery';
  
 const IMAGES =
-[{
-        src: "/img/frameless-shower.jpg",
-        thumbnail: "/img/frameless-shower.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
-        caption: "After Rain (Jeshu John - designerspics.com)"
-},
+[
 {
-        src: "/img/glass-shower.jpg",
-        thumbnail: "/img/glass-shower.jpg",
+        src: "/img/Stair-Balustrade.jpg",
+        thumbnail: "/img/Stair-Balustrade.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
         tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
@@ -20,30 +14,30 @@ const IMAGES =
 },
  
 {
-        src: "/img/Mirror.jpg",
-        thumbnail: "/img/Mirror.jpg",
+        src: "/img/Stairwell.jpg",
+        thumbnail: "/img/Stairwell.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
 },
 {
-        src: "/img/shower-screen.jpeg",
-        thumbnail: "/img/shower-screen.jpeg",
+        src: "/img/outdoor-balustrade.jpg",
+        thumbnail: "/img/outdoor-balustrade.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
-        tags: [{value: "Glass Shower", title: "Frameless Glass Shower"}, {value: "People", title: "People"}],
-        caption: "Frameless Glass Shower Screen"
+        tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
+        caption: "Boats (Jeshu John - designerspics.com)"
 },
 {
-        src: "/img/shower.jpg",
-        thumbnail: "/img/shower.jpg",
+        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
-        tags: [{value: "Frameless Glass Shower", title: "Frameless Glass Shower"}, {value: "People", title: "People"}],
-        caption: "Frameless Glass Shower"
+        tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
+        caption: "Boats (Jeshu John - designerspics.com)"
 }
 ]
 
-const Bathrooms = ({
+const Glazing = ({
   title,
   heading,
   description,
@@ -97,4 +91,4 @@ const Bathrooms = ({
   )
 }
 
-export default Bathrooms
+export default Glazing

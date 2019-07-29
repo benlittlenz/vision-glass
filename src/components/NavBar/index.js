@@ -43,21 +43,21 @@ const NavBar = ({toggleNavbar, isActive}) => (
             <Link className='navbar-item' style={{color: '#413F44'}} to='/services/splashbacks'>
                             Splashbacks
             </Link>
-            <Link className='navbar-item' style={{color: '#413F44'}} to='/blog'>
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/services/glazing'>
                             Glazing
             </Link>
-            <Link className='navbar-item' style={{color: '#413F44'}} to='/blog'>
-                            Cat Doors
+            <Link className='navbar-item' style={{color: '#413F44'}} to='/services/pet-doors'>
+                            Pet Doors
             </Link>
             <Link className='navbar-item' style={{color: '#413F44'}} to='/about'>
                             About
             </Link>
-            <div className='navbar-item'>
+            <div className='navbar-item' style={{marginLeft: '100px'}}>
               <div className='field is-grouped'>
                 <p className='control'>
                   <Link
                     style={{background: '#8C43FF', color: '#fff', fontWeight:'400'}}
-                    className='button'
+                    className='button is-pulled-right'
                     to='/contact'>
                             Contact Us
                   </Link>

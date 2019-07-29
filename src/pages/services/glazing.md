@@ -1,7 +1,7 @@
 ---
-templateKey: bathrooms-page
-title: Bathrooms
-meta_title: Bathrooms | Vision Glass
+templateKey: glazing-page
+title: Glazing
+meta_title: Glazing | Vision Glass
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
@@ -18,4 +18,3 @@ A sleek frameless glass shower can be the perfect addition to an elegant and mod
 Mirrors are an excellent and inexpensive way to create a sense of light and space in your bathroom. We can provide you with either a flat polished or bevelled edge and as always we will ensure we get the perfect fit by coming to measure the space you have available.
 
 Going beyond the bathroom – decorative mirrors can be a stunning feature piece for any room in your house.
-

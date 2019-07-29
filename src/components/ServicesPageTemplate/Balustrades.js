@@ -3,16 +3,10 @@ import Helmet from 'react-helmet'
 import Gallery from 'react-grid-gallery';
  
 const IMAGES =
-[{
-        src: "/img/frameless-balustrade.jpg",
-        thumbnail: "/img/frameless-balustrade.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
-        caption: "After Rain (Jeshu John - designerspics.com)"
-},
+[
 {
         src: "/img/Stair-Balustrade.jpg",
-        thumbnail: "/img/Stair-Balustrade.jng",
+        thumbnail: "/img/Stair-Balustrade.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
         tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
@@ -43,7 +37,7 @@ const IMAGES =
 }
 ]
 
-const ServicesTemplate = ({
+const BalustradeTemplate = ({
   title,
   heading,
   description,
@@ -97,4 +91,4 @@ const ServicesTemplate = ({
   )
 }
 
-export default ServicesTemplate
+export default BalustradeTemplate
