@@ -1,39 +1,12 @@
 import React from 'react'
-import styled from "styled-components"
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import Gallery from '../Gallery'
-import Images from './Images'
-
-const Container = styled.div`
-  position: relative;
-  text-align: center;
-  color: white;
-`
-
-const Button = styled.button`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60%;
-  padding: 20px 10px 20px 10px;
-  color: #fff;
-  font-size: 28px;
-  font-weight: 400;
-  text-transform: uppercase;
-  z-index: 10;
-  outline: none;
-  background: #8C43FF;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  &:hover {
-    background: #fff;
-    color: #8C43FF;
-  }
-`
+import Images from './MainImage'
+import { Divider } from '../../GlobalStyles'
+import {  Container, Button, Contact } from './styles'
 
 const HomePageTemplate = ({
   title,
@@ -86,8 +59,33 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-
+    <Divider />
+    <section>
+    <h1 className='has-text-weight-semibold is-size-3 has-text-centered'>
+        Our Recent Projects
+    </h1>
     <Gallery />
+    </section>
+    <Divider />
+
+    <section>
+      <Contact>
+        <div className="consult">
+          <div className="contact-element">
+            <h1>Start a project</h1>
+          </div>
+          <div className="contact-element">
+            <p>Thinking about starting a project? Lets talk about it</p>
+          </div>
+          <div className="contact-element">
+          <button>Let's talk</button>
+          </div>
+          
+        </div>       
+      </Contact>
+    </section>
+
+    <Divider />
 
     <section className='section section--gradient'>
       <div className='container'>
