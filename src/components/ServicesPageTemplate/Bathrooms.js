@@ -26,7 +26,8 @@ const IMAGES =
         src: "/img/Mirror.jpg",
         thumbnail: "/img/Mirror.jpg",
         thumbnailWidth: 320,
-        thumbnailHeight: 212
+        thumbnailHeight: 212,
+        caption: "Mirror"
 },
 {
         src: "/img/showers/shower-screen.jpeg",
