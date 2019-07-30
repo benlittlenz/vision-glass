@@ -32,10 +32,9 @@ const Button = styled.button`
 
 const Contact = styled.div`
     height: 166px;
-    width: 75%;
+    width: 100%;
     background: #293347;
     margin: 0 auto 50px auto;
-    border-radius: 10px;
     margin-top: 100px;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 0 0 1px #293347;
     @media(max-width: 1010px) {

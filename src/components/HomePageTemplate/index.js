@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 import Gallery from '../Gallery'
 import Images from './MainImage'
 import { Divider } from '../../GlobalStyles'
-import {  Container, Button, Contact } from './styles'
+import { Container, Button, Contact } from './styles'
 
 const HomePageTemplate = ({
   title,
