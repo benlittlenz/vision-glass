@@ -1,10 +1,39 @@
 import React from 'react'
+import styled from "styled-components"
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import Gallery from '../Gallery'
 import Images from './Images'
+
+const Container = styled.div`
+  position: relative;
+  text-align: center;
+  color: white;
+`
+
+const Button = styled.button`
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+  padding: 20px 10px 20px 10px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  outline: none;
+  background: #8C43FF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    background: #fff;
+    color: #8C43FF;
+  }
+`
 
 const HomePageTemplate = ({
   title,
@@ -20,10 +49,10 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section>
+    <Container>
+      <Button>Free Measure and Quote</Button>
       <Images />
-    </section>
-
+    </Container>
     <section>
       <h1 className='has-text-weight-semibold is-size-3 has-text-centered'>
         Welcome to Vision Glass
@@ -49,11 +78,6 @@ const HomePageTemplate = ({
             padding: '50px'
           }}
           className='has-text-centered'>
-            Established in Howick in 1993, Haynes Glass is a full service glass, 
-            glazing and glass hardware company. Through innovation, hard work and 
-            dedication, Haynes Glass has grown into a glazing company capable of 
-            undertaking both small and large scale projects. We are proud to efficiently 
-            service the Greater Auckland region.
             We handle all types of residential glazing for new home builds, renovations
              and apartments. Our commercial team works exclusively with designers, 
              contractors and architects in storefront, curtain wall systems, canopies, 

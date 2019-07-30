@@ -1,6 +1,11 @@
 import React from 'react'
 import Img from "gatsby-image"
+import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
+const StyledImage = styled(Img)`
+  position: relative;
+  z-index: 1;
+`
 
 const Images = () => (
     <StaticQuery query = {graphql`
@@ -16,7 +21,7 @@ const Images = () => (
     `} 
         render={data => (
             <div>
-                <Img fluid={data.imageFile.childImageSharp.fluid} />
+                <StyledImage fluid={data.imageFile.childImageSharp.fluid} />
             </div>
         )}
     />
