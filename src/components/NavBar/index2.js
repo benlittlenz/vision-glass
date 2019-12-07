@@ -1,13 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Fade from 'react-reveal/Fade';
-import ScrollSpyMenu from 'common/src/components/ScrollSpyMenu';
+import ScrollSpyMenu from '../../common/ScrollSpyMenu'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Icon } from 'react-icons-kit';
 import { menu } from 'react-icons-kit/feather/menu';
 import { x } from 'react-icons-kit/feather/x';
 import { search } from 'react-icons-kit/feather/search';
-import Logo from 'reusecore/src/elements/UI/Logo';
+import Logo from '../../reusecore/UI/Logo'
 import Button from 'reusecore/src/elements/Button';
 import Container from 'common/src/components/UI/Container';
 import useOnClickOutside from 'common/src/hooks/useOnClickOutside';
